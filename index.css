@@ -5,6 +5,7 @@ body {
 header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #013538;
+    text-align: center;
 }
 
 ul {
@@ -25,6 +26,7 @@ ol {
 
 a {
     font-size: 40px;
+    border: 1px solid #c3c3c3;
 }
 
 img {
