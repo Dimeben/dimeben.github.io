@@ -1,9 +1,37 @@
 body {
     background-color: rgb(224, 103, 94);
-  }
+    }
+
+header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #013538;
+}
+
+ul {
+    color: #013538;
+}
+
+ol {
+    color: #013538;
+}
+
+.sub{
+    font-size: 50px;
+}
+
+.info{
+    font-size: 30px;
+}
+
+a {
+    font-size: 40px;
+}
 
 img {
     height: 500px;
-    border-radius: 50%;
     border: 5px solid #555;
+}
+
+.pic1{
+border-radius: 50%;
 }
