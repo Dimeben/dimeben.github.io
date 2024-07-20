@@ -1,66 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="index.css">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .item1 { grid-area: header; }
+        .item2 { grid-area: menu; }
+        .item3 { grid-area: main; }
+        .item4 { grid-area: right; }
+        .item5 { grid-area: footer; }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'menu main main main right right'
+                'menu footer footer footer footer footer';
+            gap: 10px;
+            background-color: #dc8053;
+            padding: 10px;
+        }
+
+        .grid-container > div {
+            background-color: rgba(244, 215, 215, 0.8);
+            text-align: center;
+            padding: 10px 0;
+            font-size: 10px;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Monkey D. Luffy</title>
-    </head>
-        <body>
-        <header> <h1> Monkey D. Luffy: The captain of the Straw Hat Pirates </h1> </header>
-        
-        <a class="flex-container" href="#intro">Introduction</a> 
-      
-        <a class="flex-container" href="#Attributes">Attributes</a>     
-        
-            
-        <a class="flex-container" href="#Arcs">Main Story Arcs</a>
-            
-        
-        <header> <h2 class="sub" id="intro"> An introduction to Luffy </h2></header>
+    <title>Monkey D. Luffy</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">
+            <header>
+                <h1>Monkey D. Luffy: The captain of the Straw Hat Pirates</h1>
+            </header>
+        </div>
 
-        <p class="info"> Monkey D. Luffy, commonly known as "Straw Hat Luffy" or simply "Straw Hat", is the founder, captain, and strongest combatant of the increasingly infamous and powerful Straw Hat Pirates.
-            He fearlessly pursues the legendary treasure of the late Gol D. Roger in order to become the new Pirate King and reach a further, untold dream (currently known to only his crew and closest friends).
-            He believes that being the Pirate King means having the most freedom in the world.</p>
+        <div class="item2">
+            <a href="#intro">Introduction</a><br><br><br><br><br><br>
+            <a href="#Attributes">Attributes</a><br><br><br><br><br><br>
+            <a href="#Arcs">Main Story Arcs</a><br><br><br><br><br><br>
+            <a target="_self" href="https://onepiece.fandom.com/wiki/Monkey_D._Luffy">Find out more about Lufy here!</a><br><br><br><br><br>
+            <a target="_blank" href="https://www.youtube.com/watch?v=scPBmrzdD0g&ab_channel=Crunchyroll">Watch Luffy transform into his most powerful form: Gear 5!</a><br><br>
+        </div>
 
-         <img class="pic1"src="./Monkey_D._Luffy_Anime_Post_Timeskip_Infobox.webp" alt="Monkey D. Luffy standing proud, despite suffering a major injury to his chest" /> 
+        <div class="item3">
+            <header class="sub" id="intro">
+                <h2>An introduction to Luffy</h2>
+            </header>
+            <p class="info">Monkey D. Luffy, commonly known as "Straw Hat Luffy" or simply "Straw Hat", is the founder, captain, and strongest combatant of the increasingly infamous and powerful Straw Hat Pirates. He fearlessly pursues the legendary treasure of the late Gol D. Roger in order to become the new Pirate King and reach a further, untold dream (currently known to only his crew and closest friends). He believes that being the Pirate King means having the most freedom in the world.</p>
+            
+            <header class="sub" id="Attributes">
+                <h2>Attributes</h2>
+            </header>         
+            <ul class="info">
+                <li>Adventurous Spirit</li>
+                <li>Carefree & Optimism</li>
+                <li>Fearlessness</li>
+                <li>Compassion</li>
+            </ul>
+            <header>
+                <h3>Currently, the Straw Hat Pirates find themselves on Eggland Island, the home of the mysterious Dr. Vegapunk!</h3>
+            </header>
+            <img class="pic2" src="./One Piece - Egghead 2.png" alt="The Straw Hat Pirates, who are currently on Egghead Island" />
+            <br>
+
          
-         <header class="sub" id="Attributes"> Attributes </header>
-         <ul class="info">
-            <li>Adventurious Spirit</li>
-            <li>Carefree & Optimism</li>
-            <li>Fearlessness</li>
-            <li>Compassion</li>
-          </ul>
+          
+            
+        </div>
 
-          <header class="sub"id="Arcs"> Main Story Arcs </header>
-          <ol class="info">
-             <li>East Blue Saga</li>
-             <li>Alabasta Saga</li>
-             <li>Sky Island Saga</li>
-             <li>Water 7 Saga</li>
-             <li>Thriller Back Saga</li>
-             <li>Summit War Saga</li>
-             <li>Fish-Man Island Saga</li>
-             <li>Dressrosa Saga</li>
-             <li>Whole Cake Island Saga</li>
-             <li>Wano Country Saga</li>
-             <li>Final Saga (Current)</li>
-           </ol>
+        <div class="item4">
+            <img class="pic1" src="./Monkey_D._Luffy_Anime_Post_Timeskip_Infobox.webp" alt="Monkey D. Luffy standing proud, despite suffering a major injury to his chest" /><br>
+            <header class="sub" id="Arcs">
+                <h2>Main Story Arcs</h2>
+            </header>
+            <ol class="info">
+                <li>East Blue Saga</li>
+                <li>Alabasta Saga</li>
+                <li>Sky Island Saga</li>
+                <li>Water 7 Saga</li>
+                <li>Thriller Bark Saga</li>
+                <li>Summit War Saga</li>
+                <li>Fish-Man Island Saga</li>
+                <li>Dressrosa Saga</li>
+                <li>Whole Cake Island Saga</li>
+                <li>Wano Country Saga</li>
+                <li>Final Saga (Current)</li>
+            </ol>    
+        </div>
 
-           <header> <h3> Currently, the Straw Hat Pirates find themselves on Eggland Island, the home of the mysterious Dr Vegapunk </h3></header>
-
-           <img class="pic2"src="./One Piece - Egghead 2.png" alt="The Straw Hat Pirates, who are currently on Egghead Island" />  
-            <br>
-            <br>
-           <a target="_self" href="https://onepiece.fandom.com/wiki/Monkey_D._Luffy" >Read more here (in this tab)</a>
-           <br>
-           <br>
-           <a target="_blank" href="https://onepiece.fandom.com/wiki/Monkey_D._Luffy" >Read more here (in a new tab)</a>
-        </body>
-    <footer>
-        <br>
-        <br>
-    Copyright Ben McCarthy, 2024 (And Eiichiro Oda, 1997)
-    </footer>
+        <div class="item5">
+                        Copyright Ben McCarthy, 2024 (And Eiichiro Oda, 1997)
+        </div>
+    </div>
+</body>
 </html>
